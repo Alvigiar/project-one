@@ -1,17 +1,32 @@
-// .wrapper{
-//     width: 100%;
-//     margin: 0 auto;
-// }
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
 
 .section-one{
     display: flex;
     flex-direction: column;
+    padding-top: 58px;
+    background-color: #EEEFF1;
 
-    
+    &__wrapper{
+        max-width: 1110px;
+    }
+
     &__nav{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    &__logo{
+        font-size: 48px;
+        font-weight: 60px;
+    }
+
+    &__link{
+        font-size: 16px;
+        font-weight: 26px;
+        text-decoration: none;
     }
 
     &__img{
@@ -22,15 +37,32 @@
 
 .content-one{
     align-items: center;
-    float: right; 
+    margin-top: 183px;
+
+    &__title{
+        font-size: 48px;
+        font-weight: 78px;
+    }
+
+    &__text{
+        font-size: 16px;
+        font-weight: 26px;
+    }
+
+    &__btn{
+        padding: 20px 35px;
+        margin-top: 60px;
+        margin-bottom: 146px;
+        font-size: 16px;
+        font-weight: 26px;
+        color: white;
+        background-color: #34547A;
+    }
 }
 
 
 
 @media (min-width:1440px){
-    .wrapper{
-        width: 1100px;
-    }
 
     .section-one{
         align-items: center;
