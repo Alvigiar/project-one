@@ -2,31 +2,32 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.wrapper{
+    width: 1110px;
+}
+
 .section-one{
-    display: flex;
-    flex-direction: column;
     padding-top: 58px;
     background-color: #EEEFF1;
-
-    &__wrapper{
-        max-width: 1110px;
-    }
-
+    
     &__nav{
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
 
     &__logo{
+        margin-right: 358px;
         font-size: 48px;
         font-weight: 60px;
+        color: #34547A;
     }
 
     &__link{
+        margin-left: 42px;
         font-size: 16px;
         font-weight: 26px;
         text-decoration: none;
+        color: black;
     }
 
     &__img{
@@ -36,8 +37,20 @@
 }
 
 .content-one{
+    @include font-roboto;
+    display: flex;
+    margin-top: 160px;
+    margin-bottom: 146px;
     align-items: center;
-    margin-top: 183px;
+    flex-wrap: nowrap;
+
+    &__cell{
+        display: flex;
+        max-width: 540px;
+        margin-left: 130px;
+        flex-direction: column;
+        align-items: flex-start;    
+    }
 
     &__title{
         font-size: 48px;
@@ -47,12 +60,12 @@
     &__text{
         font-size: 16px;
         font-weight: 26px;
+        color: #727272;
     }
 
     &__btn{
         padding: 20px 35px;
         margin-top: 60px;
-        margin-bottom: 146px;
         font-size: 16px;
         font-weight: 26px;
         color: white;
@@ -62,31 +75,34 @@
 
 
 
-@media (min-width:1440px){
 
-    .section-one{
-        align-items: center;
-        
-        
-        &__nav{
-            display: block;
-        }
-        
-        &__link{
-            margin-left: 40px;
-        }
-    
-        &__logo{
-            margin-right: 400px;
-        }
-    
-        &__img{
-            width: 350px;
-            height: 230px;
-            object-fit: fill;
-            float: left;
-            margin: 0px 130px 0px 80px;
-        }
-    }
 
-}
+
+// @media (min-width:1440px){
+
+//     .section-one{
+//         align-items: center;
+        
+        
+//         &__nav{
+//             display: block;
+//         }
+        
+//         &__link{
+//             margin-left: 40px;
+//         }
+    
+//         &__logo{
+//             margin-right: 400px;
+//         }
+    
+//         &__img{
+//             width: 350px;
+//             height: 230px;
+//             object-fit: fill;
+//             float: left;
+//             margin: 0px 130px 0px 80px;
+//         }
+//     }
+
+// }
