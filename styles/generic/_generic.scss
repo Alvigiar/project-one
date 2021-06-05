@@ -1,0 +1,28 @@
+.wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .wrapper{
+    width: 540px;
+    }
+}
+@media (min-width: 765px) {
+    .wrapper{
+    width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper{
+    width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper{
+    width: 1110px;
+    }
+}

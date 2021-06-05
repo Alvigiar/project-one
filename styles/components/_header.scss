@@ -2,15 +2,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.wrapper{
-    width: 1110px;
-}
-
 .section-one{
-    padding-top: 58px;
     background-color: #EEEFF1;
     
     &__nav{
+        padding-top: 50px;
         display: flex;
         align-items: center;
     }
@@ -29,6 +25,10 @@
         text-decoration: none;
         color: black;
     }
+    a:hover{
+        color: #34547A;
+    }
+
 
     &__img{
         width: 100%;
@@ -36,18 +36,17 @@
     }
 }
 
-.content-one{
+.content-head{
     @include font-roboto;
     display: flex;
     margin-top: 160px;
-    margin-bottom: 146px;
+    padding-bottom: 146px;
     align-items: center;
     flex-wrap: nowrap;
 
     &__cell{
         display: flex;
-        max-width: 540px;
-        margin-left: 130px;
+        margin-left: 230px;
         flex-direction: column;
         align-items: flex-start;    
     }
@@ -58,6 +57,9 @@
     }
 
     &__text{
+        max-width: 540px;
+        margin-top: 60px;
+        margin-bottom: 60px;
         font-size: 16px;
         font-weight: 26px;
         color: #727272;
@@ -65,7 +67,6 @@
 
     &__btn{
         padding: 20px 35px;
-        margin-top: 60px;
         font-size: 16px;
         font-weight: 26px;
         color: white;
