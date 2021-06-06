@@ -1,0 +1,41 @@
+.footer{
+
+    background-color: #34547A;
+}
+
+
+.footer-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+
+    &__info{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+
+    &__name{
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    &__signature{
+        font-size: 13px;
+        line-height: 21px;
+    }
+}
+
+.social-cell{
+    // margin-top: 60px;
+    
+    &__img{
+        width: 43px;
+        height: 22px;
+    }
+}

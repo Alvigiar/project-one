@@ -126,3 +126,111 @@
         margin-bottom: 100px;
     }
 }
+// /video
+
+.link-cell{
+
+
+    &__img{
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
+.micro-box{
+    
+    &__content{
+        display: flex;
+        margin-top: 72px;
+        margin-bottom: 100px;
+        justify-content: space-between;
+    }
+
+    &__img{
+        width: 255px;
+        height: 120px;
+    }
+}
+// /projects
+
+.form{
+    background-color: #EEEFF1;
+}
+
+.form-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__cell{
+        width: 540px;
+        height: 147px;
+        margin-top: 100px;
+        margin-bottom: 65px;
+    }
+
+    &__title{
+        margin-bottom: 50px;
+        font-size: 32px;
+        line-height: 37px;
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+    }
+}
+
+.reg-cell{
+    margin-bottom: 50px;
+
+    &__content-fio{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    &__text{
+        width: 233px;
+        height: 50px;
+        margin-right: 30px;
+        text-align: 14px;
+        line-height: 23px;
+        padding-left: 20px;
+    }
+    
+    &__email{
+        width: 233px;
+        height: 50px;
+        text-align: 14px;
+        line-height: 23px;
+        padding-left: 20px;
+    }
+    
+    &__content-message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    &__textarea{
+        width: 520px;
+        height: 175px;
+        margin-bottom: 50px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    &__button{
+        width: 190px;
+        height: 55px;
+        color: white;
+        background-color: #34547A;
+    }
+
+}

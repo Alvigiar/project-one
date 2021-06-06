@@ -6,9 +6,11 @@
     background-color: #EEEFF1;
     
     &__nav{
-        padding-top: 50px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        padding-top: 50px;
+
     }
 
     &__logo{
@@ -73,37 +75,3 @@
         background-color: #34547A;
     }
 }
-
-
-
-
-
-
-// @media (min-width:1440px){
-
-//     .section-one{
-//         align-items: center;
-        
-        
-//         &__nav{
-//             display: block;
-//         }
-        
-//         &__link{
-//             margin-left: 40px;
-//         }
-    
-//         &__logo{
-//             margin-right: 400px;
-//         }
-    
-//         &__img{
-//             width: 350px;
-//             height: 230px;
-//             object-fit: fill;
-//             float: left;
-//             margin: 0px 130px 0px 80px;
-//         }
-//     }
-
-// }
