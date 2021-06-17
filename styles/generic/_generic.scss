@@ -1,17 +1,16 @@
-.about-me{
+.about-me {
     display: flex;
     margin-top: 120px;
     margin-bottom: 100px;
     flex-direction: column;
     align-items: center;
 
-
-    &__title{
+    &__title {
         font-size: 32px;
         line-height: 37px;
     }
 
-    &__text{
+    &__text {
         max-width: 540px;
         margin-top: 50px;
         text-align: center;
@@ -22,49 +21,48 @@
 }
 // /about
 
-.numbers{
+.numbers {
     display: none;
-    background-color: #34547A;
+    background-color: #34547a;
 
-    &__container{
+    &__container {
         display: flex;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }
 
-.num-cell{
+.num-cell {
     display: flex;
     align-items: center;
 
-    &__img{
+    &__img {
         max-width: 50px;
         max-height: 50px;
     }
-    &__img:not(:first-child){
+    &__img:not(:first-child) {
         margin-left: 50px;
     }
 
-    &__content{
+    &__content {
         max-width: 70px;
         max-height: 44px;
     }
 
-    &__title{
+    &__title {
         font-size: 21px;
         line-height: 24px;
     }
 
-    &__text{
+    &__text {
         font-size: 16px;
         line-height: 26px;
     }
 }
 // /numbers
 
-@media (min-width:320px){
-    .numbers{
-
-        &__container{
+@media (min-width: 320px) {
+    .numbers {
+        &__container {
             // flex-direction: column;
         }
     }
@@ -72,179 +70,230 @@
 
 // media numbers
 
-.skills-cell{
+.skills-cell {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 100px;
-    margin-bottom: 100px;
 
-    &__content{
+    &__content {
         display: flex;
-        flex: 1;
         flex-direction: column;
     }
 
-    &__title{
-        margin-bottom: 50px;
+    &__title {
         font-size: 32px;
         line-height: 37px;
     }
 
-    &__subtitle{
+    &__subtitle {
         font-size: 16px;
         line-height: 26px;
         margin-top: 30px;
         color: #727272;
     }
 
-    &__line{
+    &__line {
         width: 80%;
         height: 4px;
         margin-top: 20px;
     }
 
-    &__img-container{
+    &__img-container {
         display: flex;
-        flex: 1;
-        justify-content: flex-end;
         width: 100%;
     }
 
-    &__img{
+    &__img {
         max-width: 75%;
     }
 }
 // /skills
 
-.video-cell{
+@media (min-width: 320px) {
+    .skills-cell {
+        flex-direction: column;
+
+        &__content{
+            width: 100%;
+            align-items: center;
+        }
+
+        &__img-container {
+            margin-top: 50px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills-cell {
+        flex-direction: row;
+        &__content {
+            flex: 1;
+        }
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__img-container {
+            flex: 1;
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+// /@media skills
+
+.video-cell {
     display: flex;
-    max-width: 540px;
-    max-height: 147px;
     margin-top: 100px;
     margin-bottom: 57px;
-    margin-left: auto;
-    margin-right: auto;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    // max-width: 540px;
+    // max-height: 147px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // align-items: center;
 
-
-
-    &__title{
+    &__title {
         margin-bottom: 50px;
         font-size: 32px;
         line-height: 37px;
     }
 
-    &__text{
+    &__text {
         font-size: 16px;
         line-height: 26px;
     }
 
-    &__video-container{
+    &__video-container {
         width: 100%;
     }
 
-    &__video{
+    &__video {
         width: 100%;
-        height: 600px;
         margin-bottom: 100px;
     }
 }
 // /video
 
-.link-cell{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+@media (min-width: 768px) {
+    .video-cell {
+        &__video {
+            height: 600px;
+        }
+    }
+}
+// /@media video
 
-    &__link{
-        display: flex;
+.link-cell {
+    &__link {
         width: 25%;
     }
 
-    &__img{
+    &__img {
         width: 100%;
     }
-
 }
 
-.micro-box{
-
-    &__content{
+.micro-box {
+    &__content {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 72px;
         margin-bottom: 100px;
     }
 
-    &__img{
+    &__img {
         width: 255px;
         height: 120px;
     }
 }
 // /projects
 
-.form{
-    background-color: #EEEFF1;
+@media (min-width: 320px) {
+    .micro-box {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .link-cell{
+
+    }
 }
 
-.form-box{
+@media (min-width:768px) {
+    .link-cell{
+
+    }
+}
+
+// /@media projects
+
+.form {
+    background-color: #eeeff1;
+}
+
+.form-box {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
 
-
-    &__cell{
+    &__cell {
         height: 147px;
         margin-top: 100px;
         margin-bottom: 65px;
     }
 
-    &__title{
+    &__title {
         margin-bottom: 50px;
         font-size: 32px;
         line-height: 37px;
     }
 
-    &__text{
+    &__text {
         font-size: 16px;
         line-height: 26px;
         color: #727272;
     }
 }
 
-.reg-cell{
-    &__content-fio{
+.reg-cell {
+    &__content-fio {
         display: flex;
         margin-bottom: 20px;
     }
 
-    &__text{
+    &__text {
         // width: 233px;
         height: 50px;
         margin-right: 30px;
         padding-left: 20px;
     }
 
-    &__email{
+    &__email {
         // width: 233px;
         height: 50px;
         padding-left: 20px;
     }
 
-    &__content-message{
+    &__content-message {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
     }
 
-    &__textarea{
+    &__textarea {
         // width: 520px;
         height: 175px;
         margin-bottom: 50px;
@@ -252,31 +301,30 @@
         padding-top: 20px;
     }
 
-    &__button{
+    &__button {
         width: 190px;
         height: 55px;
         color: white;
-        background-color: #34547A;
+        background-color: #34547a;
     }
-
 }
 // /reg-cell
 
-@media (min-width: 320px){
-    .reg-cell{
-        &__content-fio{
+@media (min-width: 320px) {
+    .reg-cell {
+        &__content-fio {
             flex-direction: column;
         }
 
-        &__text{
+        &__text {
             margin-right: 0;
             margin-bottom: 20px;
         }
     }
 }
 
-@media (min-width: 1024px){
-    .reg-cell{
+@media (min-width: 1024px) {
+    .reg-cell {
     }
 }
 
