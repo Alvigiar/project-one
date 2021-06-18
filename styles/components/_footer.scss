@@ -1,12 +1,10 @@
 .footer{
-
     background-color: #34547A;
 }
 
 
 .footer-box{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     color: white;
@@ -32,10 +30,29 @@
 }
 
 .social-cell{
-    // margin-top: 60px;
-    
     &__img{
         width: 43px;
         height: 22px;
+    }
+}
+
+@media (min-width: 320px) {
+    .footer-box{
+        justify-content: space-evenly;
+    }
+
+    .social-cell{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-box{
+        justify-content: space-between;
+    }
+
+    .social-cell{
+        display: block;
     }
 }
