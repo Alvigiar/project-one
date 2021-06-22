@@ -11,20 +11,24 @@
 </head>
 
 <body>
-
-  <!-- header -->
-  <header class="section-one">
+  <header class="section-one" id="main">
+    <div class="burger__cell">
+      <div class="burger__toggle">
+        <span class="burger__style">
+        </span>
+      </div>
+    </div>
     <div class="wrapper section-one">
       <nav class="section-one__nav">
         <div class="section-one__logo">
           WD
         </div>
         <div class="section-one__list">
-          <a href="#" class="section-one__link">ГЛАВНАЯ</a>
-          <a href="#" class="section-one__link">ОБ АВТОРЕ</a>
-          <a href="#" class="section-one__link">РАБОТЫ</a>
-          <a href="#" class="section-one__link">ПРОЦЕСС</a>
-          <a href="#" class="section-one__link">КОНТАКТЫ</a>
+          <a href="#main" class="section-one__link">ГЛАВНАЯ</a>
+          <a href="#about" class="section-one__link">ОБ АВТОРЕ</a>
+          <a href="#work" class="section-one__link">РАБОТЫ</a>
+          <a href="#proc" class="section-one__link">ПРОЦЕСС</a>
+          <a href="#cont" class="section-one__link">КОНТАКТЫ</a>
         </div>
       </nav>
       <div class="section-one__content content-head">
@@ -41,26 +45,16 @@
       </div>
     </div>
   </header>
-  <!-- /header -->
-
-
-  <!-- main -->
   <main class="content">
-
-    <!-- abount me -->
-    <section class="wrapper about-me">
+    <section class="wrapper about-me" id="about">
       <div class="about-me__title">Обо мне</div>
       <div class="about-me__text">
         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
         "рыбой" для текстов на латинице с начала XVI века.
       </div>
     </section>
-    <!-- /abount me -->
-
-    <!-- numbers -->
     <section class="numbers">
       <div class="wrapper numbers__container">
-        <!-- <div class="numbers__cell num-cell"> -->
         <div class="num-cell__img">
           <img src="./img/project.png" alt="">
         </div>
@@ -68,8 +62,6 @@
           <div class="num-cell__title">40+</div>
           <div class="num-cell__text">проектов</div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="numbers__cell num-cell"> -->
         <div class="num-cell__img">
           <img src="./img/project.png" alt="">
         </div>
@@ -77,8 +69,6 @@
           <div class="num-cell__title">40+</div>
           <div class="num-cell__text">проектов</div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="numbers__cell num-cell"> -->
         <div class="num-cell__img">
           <img src="./img/project.png" alt="">
         </div>
@@ -86,8 +76,6 @@
           <div class="num-cell__title">40+</div>
           <div class="num-cell__text">проектов</div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="numbers__cell num-cell"> -->
         <div class="num-cell__img">
           <img src="./img/project.png" alt="">
         </div>
@@ -95,8 +83,6 @@
           <div class="num-cell__title">40+</div>
           <div class="num-cell__text">проектов</div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="numbers__cell num-cell"> -->
         <div class="num-cell__img">
           <img src="./img/project.png" alt="">
         </div>
@@ -104,12 +90,8 @@
           <div class="num-cell__title">40+</div>
           <div class="num-cell__text">проектов</div>
         </div>
-        <!-- </div> -->
       </div>
     </section>
-    <!-- /numbers -->
-
-    <!-- skills -->
     <section class="skills">
       <div class="wrapper skills__container">
         <div class="skills__container skills-cell">
@@ -128,10 +110,7 @@
         </div>
       </div>
     </section>
-    <!-- /skills -->
-
-    <!-- video -->
-    <section class="video">
+    <section class="video" id="work">
       <div class="wrapper video__container">
         <div class="video__container video-box">
           <div class="video-box__content video-content">
@@ -154,11 +133,7 @@
         </div>
       </div>
     </section>
-    <!-- /video -->
-
-    <!-- project -->
-    <section class="projects">
-      <!-- delete wrapper -->
+    <section class="projects" id="proc">
       <div class="projects__container projects-container">
         <div class="projects-container__content projects-content">
           <div class="projects-content__link-cell link-cell">
@@ -202,9 +177,6 @@
         </div>
       </div>
     </section>
-    <!-- /project -->
-
-    <!-- form -->
     <section class="form">
       <div class="wrapper form-container">
         <div class="form-container__box form-box">
@@ -218,10 +190,8 @@
             </div>
           </div>
           <form class="form-box__registration reg-cell">
-            <!-- <div class="reg-cell__content-fio"> -->
             <input type="text" name="name" placeholder="Ваше имя" class="reg-cell__text">
             <input type="email" name="email" placeholder="Ваш e-mail" class="reg-cell__email">
-            <!-- </div> -->
             <div class="reg-cell__content-message">
               <textarea type="textarea" name="message" placeholder="Сообщение" class="reg-cell__textarea"></textarea>
               <input type="button" value="ОТПРАВИТЬ" class="reg-cell__button">
@@ -230,14 +200,8 @@
         </div>
       </div>
     </section>
-
-    <!-- /form -->
-
   </main>
-  <!-- /main -->
-
-  <!-- footer -->
-  <footer class="footer">
+  <footer class="footer" id="cont">
     <div class="wrapper footer__container footer-container">
       <div class="footer-container__box footer-box">
         <div class="footer-box__info">
@@ -262,10 +226,6 @@
       </div>
     </div>
   </footer>
-  <!-- /footer -->
-
-
-
   <div id="app"></div>
   <script type="module" src="/main.js"></script>
 </body>

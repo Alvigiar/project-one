@@ -9,7 +9,7 @@
 
   &__logo {
     font-size: 48px;
-    font-weight: 60px;
+    font-weight: 700;
     color: #34547a;
   }
 
@@ -92,7 +92,7 @@
   .content-head {
     flex-direction: column;
 
-    &__cell{
+    &__cell {
       margin-top: 25px;
       align-items: center;
       text-align: center;
@@ -113,14 +113,10 @@
 }
 
 @media (min-width: 1024px) {
-}
-
-@media (min-width: 1024px) {
   .section-one {
     &__list {
       flex-direction: row;
     }
-    
   }
 
   .content-head {
@@ -130,5 +126,71 @@
       align-items: flex-start;
     }
   }
+}
 
+@media (max-width:1023px) {
+  .section-one{
+    &__list{
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      transition: .3s;
+    }
+  }
+  .active{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: orange;
+  }
+  .off{
+    overflow: hidden;
+  }
+
+  .burger{
+    &__cell{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25px;
+      height: 20px;
+      z-index: 1;
+      cursor: pointer;
+      // background-color: red;
+    }
+    &__toggle{
+      width: 100%;
+      height: 2px;
+      background-color: lightcoral;
+    }
+
+    &__toggle > span,
+    &__toggle > span::after,
+    &__toggle > span::before{
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #34547a;
+      transition: .3s;
+    }
+    &__toggle > span::after{
+      content: '';
+      top: 9px;
+    }
+    &__toggle > span::before{
+      content: '';
+      top: 18px;
+    }
+  }
+
+  .cross > span{
+    background-color: orange;
+  }
+  .cross > span::after{
+    transform: translateY(5px) rotate(-45deg);
+  }
+  .cross > span::before{
+    transform: translateY(-5px) rotate(45deg);
+  }
 }
